@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********************************************************
+FOOTER STYLING
+********************************************************/
+footer {
+    height: 50px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333333;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    /* margin: auto; */
+    background-color: #f2f2f2;
+    border-top: .5px solid #cecece;
+}
+#container {
+    width: 1240px;
+    margin: auto;
+    background-color: #f2f2f2;
+    border-top: .5px solid #cecece;
+}
+/* 'Lucida Sans', 'Lucida Sans Regular',  */
+
+/********************************************************
+PLAYER BUTTONS
+********************************************************/
+
+.button {
+    height: 50px;
+    width: 27px;
+    margin-left: 13px;
+    border: 0px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85%;
+    background-color: #f2f2f2;
+}
+
+#play {
+    background-image: url("http://simpleicon.com/wp-content/uploads/play1.png");
+    background-size: 115%;
+}
+
+/* http://simpleicon.com/wp-content/uploads/play1.png */
+
+#pause {
+    background-image: url("http://simpleicon.com/wp-content/uploads/pause.png");
+    background-size: 115%;
+}
+
+/* https://iconsplace.com/wp-content/uploads/_icons/000000/256/png/pause-icon-256.png */
+
+#back {
+    background-image: url("https://www.shareicon.net/data/128x128/2016/11/14/851932_backward_512x512.png");
+    background-size: 70%;
+}
+
+#next {
+    background-image: url("https://www.shareicon.net/data/128x128/2016/11/14/851930_forward_512x512.png");
+    background-size: 70%;
+}
+
+#shuffle {
+    background-image: url("http://simpleicon.com/wp-content/uploads/shuffle.png");
+}
+
+#repeat {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/ui-controls-editor/32/interface-controls-repeat-512.png");
+}
+
+/********************************************************
+ANIMATED PLAYER
+********************************************************/
+
+#player {
+    position: fixed;
+    height: 50px;
+    width: 635px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.timeBox {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+}
+
+#currentTime {
+    margin-top: 17.5px;
+    float: right;
+    color: #FF5500;
+}
+
+#remaining {
+    margin-top: 17.5px;
+    float: left;
+    cursor: pointer;
+}
+
+#timeline {
+    display: inline-block;
+    height: 50px;
+    width: 515px;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.timeline {
+    display: inline-block;
+    height: 1px;
+    width: 515px;
+    background-color: #999999;
+    margin-top: 24px;
+}
